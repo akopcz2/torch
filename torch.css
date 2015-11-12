@@ -1,0 +1,12 @@
+/* CSS declarations go here */
+.starbucks{
+	background-color:rebeccapurple;
+}
+h1, h2{
+	margin:0 auto;
+	text-align:center;
+	font-size:3em;
+}
+h2{
+	font-size:1em;
+}
