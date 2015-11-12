@@ -5,29 +5,23 @@ Template.howmany.count = function () {
     if (People.find() != undefined) {
     	var numer = People.find().fetch().length;
 
-    	var colors = ['rebeccapurple','blue','steelblue'];
+
+		//generate a random colors 
+		var cl = "#" + Math.random().toString(16).slice(2, 8);
     	var body = $('body');
+    	var player = $('#christmas');
 
-    	for(i=0; i<colors.length; i++){
+    	for(i=0; i<cl.length; i++){
 
-	        if(numer === 1){
-	    		body.css({background:colors[0]});
-	    		console.log(colors[numer]);
-	        }
-
-	        if(numer === 2){
-	    		body.css({background:colors[1]});
-	    		console.log(colors[numer]);
-	        }
-
-	        if(numer === 3){
-	    		body.css({background:colors[2]});
-	    		console.log(colors[numer]);
-	        }
+			body.css({background:cl});
 
     	}
 
         return numer;
     }
-    return 'Well well well...';
+
+    return;
 }
+
+
+
