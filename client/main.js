@@ -4,8 +4,7 @@ Template.howmany.count = function () {
 
     if (People.find() != undefined) {
     	var numer = People.find().fetch().length;
-
-
+    	
 		//generate a random colors 
 		var cl = "#" + Math.random().toString(16).slice(2, 8);
     	var body = $('body');
@@ -14,7 +13,6 @@ Template.howmany.count = function () {
     	for(i=0; i<cl.length; i++){
 
 			body.css({background:cl});
-
     	}
 
         return numer;
